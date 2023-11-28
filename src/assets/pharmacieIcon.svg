@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="37.889" height="51.658" viewBox="0 0 37.889 51.658">
+  <defs>
+    <filter id="icons8_rod_of_asclepius" x="0" y="0" width="37.889" height="51.658" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#icons8_rod_of_asclepius)">
+    <path id="icons8_rod_of_asclepius-2" data-name="icons8_rod_of_asclepius" d="M21.179,2a1.911,1.911,0,0,0-.765,3.663V8.12H16.972a4.972,4.972,0,0,0,0,9.944h1.912V15H16.972a1.912,1.912,0,0,1,0-3.825h8.736a4.731,4.731,0,0,0,2.739.765c1.9,0,3.442-.856,3.442-1.912S30.347,8.12,28.446,8.12h-6.5V5.663A1.911,1.911,0,0,0,21.179,2Zm-.765,10.709v9.179a5.353,5.353,0,0,0-1.53,10.484v-3.43a2.287,2.287,0,0,1,1.53-3.994h3.442a4.972,4.972,0,0,0,0-9.944H21.944V12.709Zm1.53,5.355h1.912a1.912,1.912,0,1,1,0,3.825H21.944Zm-1.53,8.414v8.414a.765.765,0,0,0,1.53,0V32.6h3.825a1.53,1.53,0,1,0,0-3.06H21.944v-3.06Z" transform="translate(-3 4)" fill="#fff"/>
+  </g>
+</svg>

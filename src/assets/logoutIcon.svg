@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="42" height="38.4" viewBox="0 0 42 38.4">
+  <defs>
+    <filter id="icons8_sign_in_form_password" x="0" y="0" width="42" height="38.4" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#icons8_sign_in_form_password)">
+    <path id="icons8_sign_in_form_password-2" data-name="icons8_sign_in_form_password" d="M14.2,7a10.2,10.2,0,1,0,6.629,17.944c.206-.181,5.063-4.456,6.425-5.884a2.693,2.693,0,0,0,0-3.721c-1.583-1.66-6.231-5.715-6.435-5.892A10.2,10.2,0,0,0,14.2,7Zm0,3.6a3,3,0,0,1,3,3v1.8A1.8,1.8,0,0,1,19,17.2v3.6a1.8,1.8,0,0,1-1.8,1.8h-6a1.8,1.8,0,0,1-1.8-1.8V17.2a1.8,1.8,0,0,1,1.8-1.8V13.6A3,3,0,0,1,14.2,10.6Zm0,1.8A1.2,1.2,0,0,0,13,13.6v1.8h2.4V13.6A1.2,1.2,0,0,0,14.2,12.4Zm0,5.4A1.2,1.2,0,1,0,15.4,19,1.2,1.2,0,0,0,14.2,17.8Z" transform="translate(5 -1)" fill="#fff"/>
+  </g>
+</svg>

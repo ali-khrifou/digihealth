@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="42" height="46.467" viewBox="0 0 42 46.467">
+  <defs>
+    <filter id="icons8_waiting_room" x="0" y="0" width="39.511" height="46.467" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="icons8_pulse" x="10.755" y="1.934" width="31.245" height="30.3" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-2"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_52394" data-name="Group 52394" transform="translate(-10 -431.533)">
+    <g transform="matrix(1, 0, 0, 1, 10, 431.53)" filter="url(#icons8_waiting_room)">
+      <path id="icons8_waiting_room-2" data-name="icons8_waiting_room" d="M8.545,4a2.773,2.773,0,1,0,2.773,2.773A2.773,2.773,0,0,0,8.545,4Zm1.078,6.956a2.774,2.774,0,0,0-2.792,3.483l1.892,7.567a2.774,2.774,0,0,0,2.6,2.1h6.932l3.38,6.9.158.474a1.387,1.387,0,1,0,2.63-.877l-2.773-8.32a1.387,1.387,0,0,0-1.162-.956l-6.7-1.961-1.568-6.271A2.774,2.774,0,0,0,9.623,10.956ZM4.076,15.08A1.04,1.04,0,0,0,3.03,16.385L4.883,23.8A5.9,5.9,0,0,0,10.6,28.267h5.918a1.04,1.04,0,1,0,0-2.08H10.6A3.8,3.8,0,0,1,6.9,23.3L5.047,15.882a1.04,1.04,0,0,0-.971-.8Z" transform="translate(6.01 2)" fill="#fff"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 10, 431.53)" filter="url(#icons8_pulse)">
+      <path id="icons8_pulse-2" data-name="icons8_pulse" d="M15.3,10.36a.939.939,0,0,0-.7.315H13.407a.631.631,0,0,0-.605.453L12.1,13.5,11.2,5.558a.631.631,0,0,0-1.246-.047l-1.14,5.931L8.009,9.2a.631.631,0,0,0-.575-.418.616.616,0,0,0-.6.382l-.782,1.825H4.647a.946.946,0,1,0,0,1.261H6.469a.631.631,0,0,0,.58-.382l.313-.73,1.036,2.9a.631.631,0,0,0,1.214-.093l.8-4.153.794,6.944a.63.63,0,0,0,.572.557l.055,0a.631.631,0,0,0,.6-.453l1.443-4.908h.72a.945.945,0,1,0,.7-1.577Z" transform="translate(16.76 2.94)" fill="#fff"/>
+    </g>
+  </g>
+</svg>
