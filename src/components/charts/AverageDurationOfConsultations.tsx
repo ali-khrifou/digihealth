@@ -16,7 +16,7 @@ function Index() {
             options: {
                 zoom: false,
                 chart: {
-                    width: '100%',
+                    maxWidth: 1200,
                     height: 250,
                     type: 'area',
                     toolbar: {

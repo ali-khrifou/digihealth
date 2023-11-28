@@ -10,6 +10,7 @@ function index() {
             <Avatar src="https://docs.material-tailwind.com/img/face-2.jpg" alt="avatar" />
         </div>
         <hr className='border-black'/>
+        
     </>)
 }
 

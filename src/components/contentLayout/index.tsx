@@ -1,19 +1,16 @@
 import React from 'react'
-import { DatePicker, Select } from 'antd';
-const { RangePicker } = DatePicker;
+
+
 
 interface ILayoutContent {
     title: string,
     logo: any,
     subTitle: string,
-    children: React.ReactNode
 }
 
-function index({ title, logo, subTitle, children }: ILayoutContent) {
+function index({ title, logo, subTitle }: ILayoutContent) {
 
-    const handleChange = (value: string | string[]) => {
-        console.log(`Selected: ${value}`);
-    };
+   
     
     return (<>
         <div className='flex flex-col'>
@@ -27,34 +24,7 @@ function index({ title, logo, subTitle, children }: ILayoutContent) {
                 </div>
             </div>
         </div>
-        {/* searchsection */}
-        <div className='bg-[#E2F2F3]'>
-            <div className='grid grid-cols-5 m-3 p-2 gap-4'>
-                <Select size={'middle'}
-                    defaultValue="Région:Tous"
-                    onChange={handleChange}
-                    style={{ width: 200 }}
-                    options={[]} />
-                <Select size={'middle'}
-                    defaultValue="Province:Tous"
-                    onChange={handleChange}
-                    style={{ width: 200 }}
-                    options={[]} />
-                <Select size={'middle'}
-                     defaultValue="Commun:Tous"
-                    onChange={handleChange}
-                    style={{ width: 200 }}
-                    options={[]} />
-                <DatePicker />
-                <RangePicker size='middle' />
-
-            </div>
-            <div>
-
-            {children}
-            </div>
-
-        </div>
+      
     </>
     )
 }
