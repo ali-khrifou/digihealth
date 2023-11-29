@@ -10,17 +10,17 @@ import { Link } from 'react-router-dom'
 
 const menuItems = [
     { path: "/patient", title: 'Administration des Patients et Services', icon: administrationIcon },
-    { path: "/", title: 'Gestion Médicale et Pharmaceutique', icon: pharmacieIcon },
-    { path: "/", title: 'Performance Clinique et Épidémiologie', icon: performanceIcon },
-    { path: "/", title: 'Télémédecine', icon: telemedecineIcon },
-    { path: "/", title: 'Facturation et Cotation', icon: facturationIcon },
+    { path: "/medication", title: 'Gestion Médicale et Pharmaceutique', icon: pharmacieIcon },
+    { path: "/performance", title: 'Performance Clinique et Épidémiologie', icon: performanceIcon },
+    { path: "/telemedcine", title: 'Télémédecine', icon: telemedecineIcon },
+    { path: "/billing", title: 'Facturation et Cotation', icon: facturationIcon },
     { path: "/", title: 'Déconnexion', icon: logoutIcon },
 ]
 
 function Index() {
     const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
     return (
-        <div className="flex flex-col bg-gradient-to-r from-blue-500 to-cyan-500 text-white h-screen">
+        <div className="flex flex-col flex-shrink bg-gradient-to-r from-blue-500 to-cyan-500 text-white h-screen">
             <div className='flex items-center justify-center py-6'>
                 <img src={logo} alt="" />
             </div>

@@ -27,7 +27,7 @@ interface IDynamicCardProps {
 export const DynamicCard = ({ title, count, logo, typeChart, percent, progress, secondeIcon, unité }: IDynamicCardProps) => {
     return (
 
-        <div className='grid grid-cols-5 bg-white rounded-lg p-3 m-5 h-[15rem]'>
+        <div className='grid grid-cols-5 w-auto bg-white rounded-lg p-3 m-5 h-[15rem]'>
             <div className='col-span-3 flex flex-col items-start justify-start'>
                 <p className="text-[#25265E] text-xs font-semibold">{title}</p>
                 <h3 className='text-[#0DA8AE] text-2xl font-bold mt-5 flex gap-2 items-center'>
@@ -44,7 +44,7 @@ export const DynamicCard = ({ title, count, logo, typeChart, percent, progress, 
             </div>
             <div className="col-span-2 flex flex-col align-top items-end my-5 gap-2">
                 <img src={logo} alt="" className="w-20 h-14 mt-0 mb-2" />
-               {typeChart !== '3' && percent != undefined && progress != undefined  ? ( <>
+               { percent !== undefined && progress !== undefined  ? ( <>
                <div className="flex items-start justify-between align-top gap-2 m-4">
                     
                         { progress?<FaLongArrowAltUp color = "#1E8F12" size = { 50 } /> : <FaLongArrowAltDown color="#ff0000" size={50} />}

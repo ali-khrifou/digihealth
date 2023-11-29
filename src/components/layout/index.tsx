@@ -11,7 +11,7 @@ function Index() {
         <>
             <div className="grid grid-cols-5">
 
-                <div className='bg-gradient-to-r from-blue-500 to-cyan-500'>
+                <div className='bg-gradient-to-r from-blue-500 to-cyan-500 '>
                     <Sidebar />
                 </div>
                 <div className="col-span-4">

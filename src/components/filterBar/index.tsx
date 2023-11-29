@@ -8,7 +8,7 @@ function index() {
     };
     return (<>
         <div>
-            <div className='grid grid-cols-5 m-3 p-2 gap-4'>
+            <div className='grid lg:grid-cols-5 md:grid-3 sm:grid-cols-1 m-3 p-2 gap-4'>
                 <Select size={'middle'}
                     defaultValue="Région:Tous"
                     onChange={handleChange}

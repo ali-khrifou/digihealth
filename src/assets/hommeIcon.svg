@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24.957" height="62.394" viewBox="0 0 24.957 62.394">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#59afe6"/>
+      <stop offset="1" stop-color="#2d5873"/>
+    </linearGradient>
+  </defs>
+  <path id="icons8_toilet" d="M15.479,2a6.239,6.239,0,1,0,6.239,6.239A6.239,6.239,0,0,0,15.479,2ZM9.239,17.6A6.238,6.238,0,0,0,3,23.838V42.556a3.121,3.121,0,0,0,3.12,3.12v15.6a3.12,3.12,0,0,0,6.239,0v-15.6H18.6v15.6a3.12,3.12,0,0,0,6.239,0v-15.6a3.121,3.121,0,0,0,3.12-3.12V23.838A6.238,6.238,0,0,0,21.718,17.6Z" transform="translate(-3 -2)" fill="url(#linear-gradient)"/>
+</svg>
