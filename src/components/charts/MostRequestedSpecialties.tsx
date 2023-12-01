@@ -13,7 +13,7 @@ function Index() {
                 type: 'pie',
               },
               labels: ['Pneumologues', 'Dermatologues', 'Cardiologues', 'Pediatres','Gynécologues'],
-              colors: ['#94D13D', '#6F58E9', '#2D99FE', '#2DDAC1', '#3EAE74'],
+              colors: ['#06234F', '#3EAE74', '#3EAE74', '#F9D513', '#E99C58'],
               responsive: [{
                 breakpoint: 480,
                 options: {
@@ -33,7 +33,7 @@ function Index() {
     )
     return (
         <div className="flex justify-start items-start m-0">
-            <Chart options={state.options} series={state.series} type="pie" height={250} width={380}  />
+            <Chart options={state.options} series={state.series} type="pie" height={200} width={480}  />
         </div>
     )
 }

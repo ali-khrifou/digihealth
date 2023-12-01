@@ -35,9 +35,9 @@ function Index() {
       },
       plotOptions: {
         bar: {
-          borderRadius: 7,
-          columnWidth: '50%',
-        }
+          borderRadius: 1,
+          columnWidth: '15%',
+      }
       },
       dataLabels: {
         enabled: false

@@ -36,15 +36,15 @@ function Index() {
             },
             plotOptions: {
                 bar: {
-                    borderRadius: 7,
-                    columnWidth: '20%',
+                    borderRadius: 5,
+                    columnWidth: '10%',
                 }
             },
             dataLabels: {
                 enabled: false
             },
             stroke: {
-                width: 2
+                width: 0.5
             },
 
             grid: {
@@ -98,7 +98,7 @@ function Index() {
         <>
 
 
-            <div className='flex flex-col bg-white rounded-lg p-3 m-5 h-[15rem]'>
+            <div className='flex flex-col bg-white rounded-lg p-3 m-5 h-auto'>
                 <div className='col-span-4 flex items-start justify-between'>
                     <p className="text-[#25265E] text-xs font-semibold">Motifs de référencement vers d'autres structures selon la CIM-11</p>
                   

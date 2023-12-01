@@ -26,7 +26,7 @@ function MedicationManagement() {
         </div>
         <div className='grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 self-stretch gap-2 m-2 p-2 bg-[#E2F2F3]'>
 
-          <div className='block  flex-col rounded-lg w-[548px] h-[250px] bg-white ' style={{ backgroundImage: `url(${medicationBg1})`, backgroundRepeat: 'no-repeat', backgroundSize: 'contain', backgroundPosition: 'top right' }}>
+          <div className='block  flex-col rounded-lg w-auto h-[250px] bg-white sm:bg-cover' style={{ backgroundImage: `url(${medicationBg1})`, backgroundRepeat: 'no-repeat', backgroundSize: 'contain', backgroundPosition: 'top right' }}>
             <div className='flex flex-col  gap-4 ml-6'>
               <p className='text-[#25265E] font-semibold text-md my-2'>Nombre de prescriptions émises</p>
               <p className='text-[#0DA8AE] text-[80px] font-bold '> 4 068</p>
@@ -39,7 +39,7 @@ function MedicationManagement() {
 
 
           {/* seconde card with chart */}
-          <div className='block  flex-col rounded-lg w-[548px] h-[250px] bg-white ' style={{ backgroundImage: `url(${medicationBg4})`, backgroundRepeat: 'no-repeat', backgroundSize: 'contain', backgroundPosition: 'top right' }}>
+          <div className='block  flex-col rounded-lg w-auto h-[250px] bg-white sm:bg-cover' style={{ backgroundImage: `url(${medicationBg4})`, backgroundRepeat: 'no-repeat', backgroundSize: 'contain', backgroundPosition: 'top right' }}>
             <div className='flex  justify-around p-3'>
               <p className='text-[#25265E] font-semibold text-sm my-2'>Classement des médicaments les plus prescrits par DCI.</p>
               <Select
@@ -62,7 +62,7 @@ function MedicationManagement() {
 
 
 
-          <div className='block  flex-col rounded-lg w-[548px] h-[250px] bg-white' style={{ backgroundImage: `url(${medicationBg2})`, backgroundRepeat: 'no-repeat', backgroundSize: 'contain', backgroundPosition: 'top right' }}>
+          <div className='block  flex-col rounded-lg w-auto h-[250px] bg-white sm:bg-cover' style={{ backgroundImage: `url(${medicationBg2})`, backgroundRepeat: 'no-repeat', backgroundSize: 'contain', backgroundPosition: 'top right' }}>
             <div className='flex flex-col  gap-4 ml-6'>
               <p className='text-[#25265E] font-semibold text-md my-2'>Quantité de médicaments distribués.</p>
               <p className='text-[#0DA8AE] text-[80px] font-bold '> 10 654</p>
@@ -76,7 +76,7 @@ function MedicationManagement() {
 
 
 
-          <div className='block  flex-col rounded-lg w-[548px] h-[250px] bg-white ' style={{ backgroundImage: `url(${medicationBg3})`, backgroundRepeat: 'no-repeat', backgroundSize: 'contain', backgroundPosition: 'top right' }}>
+          <div className='block  flex-col rounded-lg w-auto h-[250px] bg-white sm:bg-cover' style={{ backgroundImage: `url(${medicationBg3})`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover', backgroundPosition: 'top right' }}>
             <div className='flex flex-col  gap-4 ml-6'>
               <p className='text-[#25265E] font-semibold text-md my-2'>Poucentage des prescriptions avec antibiothérapie.</p>
               <p className='text-[#0DA8AE] text-[80px] font-bold '> 307</p>

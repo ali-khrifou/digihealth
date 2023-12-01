@@ -13,7 +13,8 @@ function index({ title, logo, subTitle }: ILayoutContent) {
    
     
     return (<>
-        <div className='flex flex-col'>
+    <hr className='border-black h-0.5 mt-0'/>
+        <div className='flex flex-col bg-white'>
             <div className='flex flex-col my-2 mx-5'>
                 <div className='flex gap-5'>
                     <img src={logo} alt="" />

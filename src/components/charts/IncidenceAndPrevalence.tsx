@@ -44,7 +44,7 @@ function Index() {
                 enabled: false
             },
             stroke: {
-                width: 2
+                width: 0.2
             },
 
             grid: {

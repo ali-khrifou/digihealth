@@ -49,7 +49,7 @@ function ClinicalPerformance() {
         <div className='block  flex-col gap-4 p-2 rounded-lg w-auto h-[260px] bg-white'>
 
           <p className='text-[#25265E] font-semibold text-sm my-2'>Taux de cas gérés par le médecin généraliste uniquement versus télé-expertise.</p>
-          <div className="grid lg:grid-cols-3 md:grid-cols-1">
+          <div className="grid grid-cols-3">
 
             <div className='flex h-10 items-center self-center'>
               <p className='flex items-center bg-gradient-to-r from-[#2C8CCA] to-[#E3F4FF] rounded-tl-lg rounded-bl-lg p-2 text-xs  text-[#25265E] font-semibold'>
@@ -98,12 +98,9 @@ function ClinicalPerformance() {
 
           <p className='text-[#25265E] font-semibold text-sm my-2'>Incidence et prévalence des pathologies diagnostiquées</p>
           <p className='text-[#0DA8AE] text-[50px] font-bold'>1035</p>
-          <div className='grid grid-cols-3 gap-3'>
-            <div className='col-span-2'>
-
-            <img src={bgChart} alt='' />
-            </div>
-            <div className='flex flex-col items-center justify-center'>
+          <div className='grid grid-cols-1 gap-3' style={{ backgroundImage: `url(${bgChart})`, backgroundRepeat: 'no-repeat', backgroundSize: 'contain', backgroundPosition: 'top left' }}>
+           
+            <div className='flex flex-col items-end justify-end px-3' >
               <div className='flex gap-2'>
                 <FaLongArrowAltUp color="#1E8F12" size={50} />
                 <p className='font-bold text-4xl text-[#1E8F12]'>62 %</p>

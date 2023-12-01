@@ -7,6 +7,7 @@ import MedicationManagement from './pages/MedicationManagement';
 import ClinicalPerformance from './pages/ClinicalPerformance';
 import TelemedecineStatistics from './pages/TelemedecineStatistics';
 import Billing from './pages/Billing';
+import Login from './pages/Login';
 
 
 function App() {
@@ -16,25 +17,28 @@ function App() {
       element: <Layout />,
       children: [
         {
-          path:"/patient",
-          element:<PatientsStatistics />
-        }, 
-        {
-          path:"/medication",
-          element:<MedicationManagement />
-        }, {
-          path:"/performance",
-          element:<ClinicalPerformance />
-        }, {
-          path:"/telemedcine",
-          element:<TelemedecineStatistics />
-        },{
-          path:"/billing",
-          element:<Billing />
+          path: "/patient",
+          element: <PatientsStatistics />
         },
+        {
+          path: "/medication",
+          element: <MedicationManagement />
+        }, {
+          path: "/performance",
+          element: <ClinicalPerformance />
+        }, {
+          path: "/telemedcine",
+          element: <TelemedecineStatistics />
+        }, {
+          path: "/billing",
+          element: <Billing />
 
+        }
       ]
-    }
+    }, {
+      path: "/login",
+      element: <Login />
+    },
   ];
 
   return <RouterProvider router={createBrowserRouter(routes)} />

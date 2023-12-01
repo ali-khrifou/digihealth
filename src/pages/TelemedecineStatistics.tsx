@@ -56,24 +56,27 @@ function TelemedecineStatistics() {
           <CaseResolutionRateByTeleExpertise />
         </div>
 
-        <div className='block   h-[220px] flex-col gap-6 p-2 rounded-lg  bg-white' style={{ backgroundImage: `url(${teleBg4})`, backgroundRepeat: 'no-repeat', backgroundSize: 'contain', backgroundPosition: 'top right' }}>
+        <div className='block   h-[220px] flex-col gap-6 rounded-lg  bg-white' style={{ backgroundImage: `url(${teleBg4})`, backgroundRepeat: 'no-repeat', backgroundSize: 'contain', backgroundPosition: 'top right' }}>
 
-          <p className='text-[#25265E] font-semibold text-sm my-2'>Durée moyenne d'une session de télé-expertise.</p>
-          <div className='flex gap-3'>
+          <p className='text-[#25265E] px-2 font-semibold text-sm my-2'>Durée moyenne d'une session de télé-expertise.</p>
+          <div className='flex gap-4 px-2'>
             <img src={clockIcon2} alt="" />
             <p className='text-[#0DA8AE] text-4xl font-bold'>27 min</p>
           </div>
-          <div>
-            <img src={bgChart} alt="" />
-            <p className='flex gap-4 items-center text-red-600 text-2xl font-bold self-end mt-[-5rem] mx-3 z-10'>
-              <FaLongArrowAltDown color='red' className='z-100' size={40} /> 3 %</p>
+          <div className='h-[8.6rem] w-full' style={{ backgroundImage: `url(${bgChart})`,backgroundRepeat:'no-repeat', backgroundSize: 'cover', backgroundPosition: 'left left' }}>
+            {/* <img src={bgChart} alt="" className='h-auto w-auto' /> */}
+            <div className='pt-14'>
+            <p className='flex items-center align-bottom gap-4  text-red-600 text-2xl font-bold'>
+              <FaLongArrowAltDown color='red' className='' size={40} /> 3 %</p>
+            </div>
           </div>
         </div>
 
 
       </div>
 
-    </div>)
+    </div>
+    )
 }
 
 export default TelemedecineStatistics

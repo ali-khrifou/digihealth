@@ -12,17 +12,17 @@ function index() {
                 <Select size={'middle'}
                     defaultValue="Région:Tous"
                     onChange={handleChange}
-                    style={{ width: 200 }}
+                    
                     options={[]} />
                 <Select size={'middle'}
                     defaultValue="Province:Tous"
                     onChange={handleChange}
-                    style={{ width: 200 }}
+                    
                     options={[]} />
                 <Select size={'middle'}
                     defaultValue="Commun:Tous"
                     onChange={handleChange}
-                    style={{ width: 200 }}
+                    
                     options={[]} />
                 <DatePicker />
                 <RangePicker size='middle' />

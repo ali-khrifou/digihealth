@@ -6,22 +6,17 @@ function Index() {
     const [state, setState] = useState<any>({
 
         series: [{
-            name: 'Servings',
+            name: 'Incidence',
             data: [ 10, 4, 8, 10, 12]
         }],
         options: {
-            colors: ['#0B2349'],
+            colors: ['#08A5AB'],
             annotations: {
                 points: [{
                     x: '',
                     seriesIndex: 0,
                     label: {
-                        borderColor: '#775DD0',
-                        offsetY: 0,
-                        style: {
-                            color: '#fff',
-                            background: '#775DD0',
-                        },
+                    show:false
                         // text: 'Bananas are good',
                     }
                 }]
@@ -37,19 +32,21 @@ function Index() {
             plotOptions: {
                 bar: {
                     borderRadius: 7,
-                    columnWidth: '20%',
+                    columnWidth: '16%',
+                    color: '#fff',
                 }
             },
             dataLabels: {
                 enabled: false
             },
             stroke: {
-                width: 2
+                width: 0.2
             },
 
             grid: {
                 row: {
-                    colors: ['#fff', '#f2f2f2']
+                    show:false,
+                    // colors: ['#ffffff', '#ffffff']
                 }
             },
             xaxis: {

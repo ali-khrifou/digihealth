@@ -72,7 +72,7 @@ function Billing() {
 
 
       <div className="grid grid-cols-1 m-3 gap-4">
-        <div className='block h-[220px]  mb-5 flex-col gap-4 p-2 rounded-lg  bg-white'>
+        <div className='block h-full  mb-5 flex-col gap-4 p-2 rounded-lg  bg-white'>
 
           <p className='text-[#25265E] font-semibold text-sm my-2'>Evolution XXX</p>
 

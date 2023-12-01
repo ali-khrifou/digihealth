@@ -22,6 +22,12 @@ function Index() {
                     toolbar: {
                         show: false
                       },
+                      legend:{
+                        show: false
+                      },
+                      label:{
+                        show:false
+                      }
                 },
                 dataLabels: {
                     enabled: false

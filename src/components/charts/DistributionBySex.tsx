@@ -45,7 +45,7 @@ function Index() {
     return (
 
 
-        <div className='flex flex-col bg-white rounded-lg p-3 m-5 h-[15rem] '>
+        <div className='flex flex-col bg-white rounded-lg p-3 m-5 h-auto '>
             <div>
                 <p className="text-[#25265E] text-xs font-semibold w-max">Répartition par sexe</p>
             </div>

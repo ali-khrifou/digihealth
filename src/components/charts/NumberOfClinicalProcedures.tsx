@@ -35,15 +35,15 @@ function Index() {
       },
       plotOptions: {
         bar: {
-          borderRadius: 7,
-          columnWidth: '50%',
+          borderRadius: 4,
+          columnWidth: '20%',
         }
       },
       dataLabels: {
         enabled: false
       },
       stroke: {
-        width: 2
+        width: 0.2
       },
 
       grid: {
