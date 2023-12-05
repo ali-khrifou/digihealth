@@ -5,7 +5,7 @@ function Index() {
     const [state, setState] = useState<any>(
         {
           
-            series: [62, 18, 11, 9],
+            series: [62, 18, 11, 9,10],
             options: {
               chart: {
                 minWidth: 380,

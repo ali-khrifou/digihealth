@@ -32,6 +32,9 @@ function Index() {
         toolbar: {
           show: false
         },
+        sparkline: {
+          enabled: true
+        }
       },
       plotOptions: {
         bar: {
@@ -44,6 +47,9 @@ function Index() {
       },
       stroke: {
         width: 0.2
+      },
+      sparkline: {
+        show:true
       },
 
       grid: {
@@ -95,7 +101,7 @@ function Index() {
 
   return (
     <div style={{ minWidth:'12rem',maxWidth:'22rem' }}>
-      <Chart options={state.options} series={state.series} type="bar" min-width={200} max-width={1200} height={150} />
+      <Chart options={state.options} series={state.series} type="bar" min-width={200} max-width={1200} height={140} />
     </div>
   )
 }

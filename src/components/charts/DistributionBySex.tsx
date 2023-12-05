@@ -7,14 +7,14 @@ function Index() {
     const [state, setState] = useState<any>(
         {
 
-            series: [62, 18],
+            series: [62, 38],
             options: {
                 chart: {
                     minWidth: 380,
                     maxWidth: 1200,
                     type: 'pie',
                 },
-                labels: [],
+                labels: ['Femme','Homme'],
                 dataLabels: {
                     enabled: true,
                 },
@@ -22,34 +22,32 @@ function Index() {
                     show: false
                 },
                 colors: ['#983333', '#59AFE6'],
-                // responsive: [{
-                //     breakpoint: 480,
-                //     options: {
-                //         chart: {
-                //             width: 200,
-                //             toolbar: {
-                //                 show: false
-                //             },
-                //             labels: {
-                //                 show: false
-                //             }
-                //         },
-                //         xaxis: {
-                //             enabled: false,
-                //         },
-                //     }
-                // }]
+                responsive: [{
+                    breakpoint: 480,
+                    options: {
+                      chart: {
+                        width: 200,
+                        toolbar: {
+                          show: false
+                        },
+                      },
+                      legend: {
+                        show:false,
+                        position: 'right'
+                      }
+                    }
+                  }]
             },
         }
     )
     return (
 
 
-        <div className='flex flex-col bg-white rounded-lg p-3 m-5 h-auto '>
+        <div className='flex flex-col bg-white rounded-lg py-2 px-3 m-1 h-auto '>
             <div>
                 <p className="text-[#25265E] text-xs font-semibold w-max">Répartition par sexe</p>
             </div>
-            <div className='grid grid-cols-2 grid-flow-row mt-5'>
+            <div className='grid grid-cols-2 mt-5'>
                 <div>
                     <Chart options={state.options} series={state.series} type="pie" height={170} width={280} className='ml-[-5rem]' />
                 </div>
@@ -57,7 +55,7 @@ function Index() {
 
                     <div className='flex'>
                         <img src={womanIcon} alt='' className='h-10 w-5' />
-                        <p className='flex gap-7 px-5 items-center bg-gradient-to-r from-[#FFEBEB] to-[#BE6363] rounded-tr-lg rounded-br-lg p-2'>
+                        <p className='flex gap-7 px-5 items-center bg-gradient-to-r from-[#FFEBEB] to-[#ae4f4f73] rounded-tr-lg rounded-br-lg p-2'>
                             <span className='text-[#AF5050] font-bold text-xl'>63%</span>Femme</p>
                     </div>
 
@@ -65,7 +63,7 @@ function Index() {
 
                     <div className='flex '>
                         <img src={manIcon} alt='' className='h-10 w-5' />
-                        <p className='flex gap-7 px-5 items-center bg-gradient-to-r from-[#E3F4FF] to-[#2C8CCA] rounded-tr-lg rounded-br-lg p-2'>
+                        <p className='flex gap-7 px-5 items-center bg-gradient-to-r from-[#E3F4FF] to-[#2c8cca63] rounded-tr-lg rounded-br-lg p-2'>
                             <span className='text-[#3F7CA2] font-bold text-xl'>22%</span>  Homme</p>
                     </div>
                 </div>

@@ -33,6 +33,12 @@ function Index() {
                 toolbar: {
                     show: false
                 },
+                xaxis: {
+                    type: "category",
+                    labels: {
+                        fontSize: '15rem',
+                    }
+                }
             },
             plotOptions: {
                 bar: {
@@ -56,7 +62,7 @@ function Index() {
                 labels: {
                     rotate: -25
                 },
-                categories: ['Rhinite allergique', 'Hypertension Artérielle', 'Asthme', 'Trouble Anxieux', 'Diabète', 'CIM23', 'CIM15'],
+                categories: [['Rhinite', ' allergique'], ['Hypertension', ' Artérielle'], 'Asthme', 'Trouble Anxieux', 'Diabète', 'CIM23', 'CIM15'],
                 tickPlacement: 'on'
             },
             yaxis: {
@@ -98,14 +104,14 @@ function Index() {
         <>
 
 
-            <div className='flex flex-col bg-white rounded-lg p-3 m-5 h-auto'>
-                <div className='col-span-4 flex items-start justify-between'>
+            <div className='flex flex-col flex-wrap bg-white rounded-lg p-4 w-auto h-[100%]'>
+                <div className='flex items-start justify-between'>
                     <p className="text-[#25265E] text-xs font-semibold">Motifs de référencement vers d'autres structures selon la CIM-11</p>
-                  
-                        <img src={logo} alt="" className="w-17 h-12 " />
-                                  </div>
-                <div>
-                <Chart options={state.options} series={state.series} type="bar" min-width={200} width={750} height={170} />
+
+                    <img src={logo} alt="" className="w-17 h-12 " />
+                </div>
+                <div className='flex '>
+                    <Chart options={state.options} series={state.series} type="bar" width={750} height={120} />
                 </div>
 
             </div >

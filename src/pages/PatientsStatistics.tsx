@@ -9,7 +9,15 @@ import clockIcon2 from '../assets/clockIcon2.svg'
 import repartitionIcon from '../assets/repartitinIcon.svg'
 import SEOReasons from '../components/charts/SEOReasons'
 import DistrubutionBySex from '../components/charts/DistributionBySex'
-import teleexpertiseIcon from '../assets/teleexpertiseIcon.svg'
+
+import TotalPatientTreat from '../components/charts/TotalPatientsTreated'
+import NumberOfNewPatientsChart from '../components/charts/NumberOfNewPatients'
+import TotalBenefitsChart from '../components/charts/TotalBenefits'
+import AverageDurationChart from '../components/charts/AverageDurationOfConsultations'
+import DistributionByAgeChart from "../components/charts/DistributionByAge";
+import NumberOfTeleExpertisesCarriedOut from "../components/charts/NumberOfTeleExpertisesCarriedOut";
+
+import { Grid } from 'antd'
 
 interface IPatientsStatisticsProps { }
 
@@ -27,16 +35,17 @@ function PatientsStatistics({ }: IPatientsStatisticsProps) {
                 <HeaderLayout title={'Total de patients pris en charge'} subTitle={'Total de patients pris en charge'} logo={administrationIcon} />
                 <FilterBar />
             </div>
-            <div className='grid lg:grid-cols-3 md:grid-cols-1 sm:grid-cols-1 bg-[#E2F2F3]'>
-                <MyCard count='23 056' title={'Total de patients pris en charge'} logo={patientIcon} typeChart={'1'} percent={26} progress={true} />
-                <MyCard count='1035' title={'Nombre de nouveaux patients'} logo={patientIcon} typeChart={'2'} percent={15} progress={true} />
-                <MyCard count='23 056' title={'Total de prestations'} logo={patientIcon} typeChart={'3'} percent={8} progress={true} />
-                <MyCard count='27' secondeIcon={clockIcon2} unité={'min'} title={'Durée moyenne des consultations'} logo={clockIcon} typeChart={'4'} percent={7.3} progress={false} />
-                <MyCard title={'Répartition par age'} typeChart={'5'} logo={repartitionIcon} />
+            <div className=' bg-[#E2F2F3] m-3' style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,25rem)' }}>
+                <TotalPatientTreat />
+                <NumberOfNewPatientsChart />
+                <TotalBenefitsChart />
+                <AverageDurationChart />
+                <DistributionByAgeChart />
 
                 <DistrubutionBySex />
-                <MyCard count='1035' title={'Nombre de Télé-expertises réalisées.'} logo={teleexpertiseIcon} typeChart={'7'} percent={15} progress={true} />
-                <div className='col-span-2'>
+
+                <NumberOfTeleExpertisesCarriedOut />
+                <div className='lg:col-span-2 md:col-span-2 ms:col-span-3 xs:col-span-3'>
                     <SEOReasons />
                 </div>
             </div>

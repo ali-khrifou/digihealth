@@ -5,9 +5,17 @@ import lockIcon from '../assets/lockIcon.svg'
 import loginBg from '../assets/loginBg.png'
 import loginBg1 from '../assets/loginBg1.png'
 import loginBg2 from '../assets/loginBg2.png'
+import { useNavigate } from 'react-router-dom'
 
 
 function Login() {
+
+    const nav = useNavigate()
+    const handleLogin = () => {
+        nav('/patient')
+    }
+
+
     return (
         <div className='bg-gradient-to-t from-[#2BD1D8] to-[#154692] w-full h-[100vh] grid grid-cols-3 items-center justify-center self-center'>
 
@@ -61,7 +69,7 @@ function Login() {
 
                                     <div>
                                         <button
-                                            type="submit"
+                                            type='button' onClick={handleLogin}
                                             className="w-64 flex justify-center py-2 px-4  border border-transparent rounded-md shadow-sm text-sm uppercase font-medium text-white bg-gradient-to-b from-[#0A536F] to-[#000B33] hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
                                         >
                                             SE CONNECTER

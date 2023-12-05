@@ -66,7 +66,7 @@ function Index() {
     )
     return (
        
-            <Chart options={state.options} series={state.series} type="donut" height={170} width={450} />
+            <Chart options={state.options} series={state.series} type="donut" height={160} width={420} />
       
     )
 }

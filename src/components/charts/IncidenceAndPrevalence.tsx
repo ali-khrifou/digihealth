@@ -56,7 +56,7 @@ function Index() {
                 labels: {
                     rotate: -25
                 },
-                categories: ['Rhinite allergique', 'Hypertension Artérielle', 'Asthme', 'Trouble Anxieux', 'Diabète', 'CIM23', 'CIM15'],
+                categories: [['Rhinite', 'allergique'], ['Hypertension',' Artérielle'], 'Asthme', ['Trouble',' Anxieux'], 'Diabète', 'CIM23', 'CIM15'],
                 tickPlacement: 'on'
             },
             yaxis: {
@@ -99,7 +99,7 @@ function Index() {
 
 
          
-                <Chart options={state.options} series={state.series} type="bar" min-width={200} width={550} height={170} />
+                <Chart options={state.options} series={state.series} type="bar" min-width={200} width={550} height={160} />
             
 
         </>)

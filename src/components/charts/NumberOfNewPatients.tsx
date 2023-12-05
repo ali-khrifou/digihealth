@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
 import Chart from 'react-apexcharts'
+import patientIcon from '../../assets/totalPatientIcon.svg'
+import { FaLongArrowAltUp } from 'react-icons/fa'
 
 function Index() {
   const [state, setState] = useState<any>({
@@ -32,6 +34,12 @@ function Index() {
         toolbar: {
           show: false
         },
+        sparkline: {
+          enabled: true
+        },
+        // categories:{
+        //   show:true
+        // }
       },
       plotOptions: {
         bar: {
@@ -43,12 +51,12 @@ function Index() {
         enabled: false
       },
       stroke: {
-        width: 2
+        width: 9
       },
 
       grid: {
-        showe:false
-      
+        showe: false
+
       },
       xaxis: {
         labels: {
@@ -74,7 +82,7 @@ function Index() {
         },
       }
     },
-   
+
     responsive: [
       {
         breakpoint: '22rem',
@@ -93,10 +101,33 @@ function Index() {
   })
 
 
-  return (
-    <div style={{ minWidth:'12rem',maxWidth:'22rem' }}>
-      <Chart options={state.options} series={state.series} type="bar" min-width={200} max-width={1200} height={150} />
+  return (<>
+
+    <div className='flex w-auto flex-col justify-between bg-white rounded-lg p-3 m-1 max-h-auto h-auto'>
+      <div className='col-span-3 flex items-start  justify-between w-auto'>
+        <p className="text-[#25265E] text-xs font-semibold">Total de patients pris en charge</p>
+        <img src={patientIcon} alt="" className="w-25 h-12 mt-0 m-2 self-end" />
+
+      </div>
+      <div className="flex justify-end  self-end items-end">
+        <div >
+          <h3 className='text-[#0DA8AE] text-3xl font-bold mt-5 flex gap-2 items-center w-auto'>1023</h3>
+          <Chart options={state.options} series={state.series} type="bar" min-width={500} max-width={700} height={100} />
+        </div>
+        <div className="flex  items-start flex-col justify-between my-4 mx-3">
+          <div className='flex'>
+            <FaLongArrowAltUp color="#1E8F12" size={35} />
+            <p className="font-bold text-3xl text-[#1E8F12]">6%</p>
+          </div>
+          <p className="text-[#707070] font-bold text-xs w-max">Comparaison avec <br /> la semaine dernier</p>
+
+        </div>
+
+
+      </div>
     </div>
+  </>
+
   )
 }
 

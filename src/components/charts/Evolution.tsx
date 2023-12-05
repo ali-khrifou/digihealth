@@ -34,8 +34,10 @@ function Index() {
         
       },
       responsive: [{
-        breakpoint: 480,
+        breakpoint: 580,
         options: {
+          width:'100%',
+          height:210,
           legend: {
             position: 'bottom',
             offsetX: -10,
@@ -67,7 +69,7 @@ function Index() {
 
 
 
-      <Chart options={state.options} series={state.series} type="bar" min-width={200} height={250} />
+      <Chart options={state.options} series={state.series} type="bar" min-width={200} height={210} />
 
 
     </>)
