@@ -44,7 +44,7 @@ function PatientsStatistics({ }: IPatientsStatisticsProps) {
                 
                 <MyCard title={'Total de prestations'} logo={headIcon} typeChart={'3'} count={307} percent={8} progress={true}/>
                 <MyCard title={'Total de patients pris en charge'} unité={'minutes'} secondeIcon={clockIcon2} logo={clockIcon} typeChart={'4'} count={307} percent={8} progress={false}/>
-                <MyCard title={'Total de patients pris en charge'} typeChart={'5'}/>
+                <DistributionByAgeChart /> 
                 
                 {/* <AverageDurationChart /> */}
                 {/* <DistributionByAgeChart /> */}
@@ -52,7 +52,7 @@ function PatientsStatistics({ }: IPatientsStatisticsProps) {
                 <DistrubutionBySex />
                 <MyCard title={'Total de patients pris en charge'} logo={teleexpertiseIcon} typeChart={'7'} count={1256} percent={6} progress={true}/>
                 <div className='lg:col-span-2 md:col-span-2 ms:col-span-3 xs:col-span-3'>
-                    <SEOReasons />
+                <MyCard title={'Motifs de référencement vers d autres structures selon la CIM-11'} typeChart={'8'}/>
                 </div>
             </div>
         </div>)

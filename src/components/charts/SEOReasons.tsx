@@ -119,17 +119,17 @@ function Index() {
         <>
 
 
-            <div className='flex flex-col flex-wrap bg-white rounded-lg p-4 w-auto h-[100%]'>
+            {/* <div className='flex flex-col flex-wrap bg-white rounded-lg p-4 w-auto h-[100%]'>
                 <div className='flex items-start justify-between'>
                     <p className="text-[#25265E] text-xs font-semibold">Motifs de référencement vers d'autres structures selon la CIM-11</p>
 
                     <img src={logo} alt="" className="w-17 h-12 " />
                 </div>
-                <div className='flex '>
+                <div className='flex '> */}
                     <Chart options={state.options} series={state.series} type="bar" width={chartWidth} height={120} />
-                </div>
+                {/* </div>
 
-            </div >
+            </div > */}
 
         </>)
 }

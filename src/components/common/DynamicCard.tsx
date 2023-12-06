@@ -44,7 +44,7 @@ export const DynamicCard = ({ title, count, logo, typeChart, percent, progress, 
                         typeChart === '2' ? <NumberOfNewPatientsChart /> :
                             typeChart === '3' ? <TotalBenefitsChart /> :
                                 typeChart === '4' ? <AverageDurationChart /> :
-                                    typeChart === '5' ? <DistributionByAgeChart /> :
+                                    typeChart === null ? <DistributionByAgeChart /> :
                                         typeChart === '6' ? <DistributionBySexChart /> :
                                             typeChart === '7' ? <NumberOfTeleExpertisesChart /> :
                                                 typeChart === '8' ? <SEOReasonsChart /> : null}
