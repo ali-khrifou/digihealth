@@ -29,7 +29,7 @@ function Index() {
                 stroke: {
                     curve: 'smooth'
                 },
-                colors: ['#1AA10B'],
+                colors: ['#8fc689'],
                 responsive: [{
                     breakpoint: 1151,
                     options: {

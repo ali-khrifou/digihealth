@@ -8,7 +8,7 @@ function Index() {
 
             series: [{
                 name: 'series1',
-                data: [109,51,  100,31, 40, 28,  42]
+                data: [109, 51, 100, 31, 40, 28, 42]
             }],
             legend: {
                 show: false
@@ -44,7 +44,7 @@ function Index() {
                 stroke: {
                     curve: 'smooth'
                 },
-                colors: ['#1AA10B'],
+                colors: ['#8fc689'],
 
                 // xaxis: {
                 //     type: 'datetime',
@@ -62,7 +62,7 @@ function Index() {
         }
     )
     return (<>
-        <div className='flex w-auto flex-col justify-between bg-white rounded-lg p-3 m-1 max-h-auto h-auto'>
+        {/* <div className='flex w-auto flex-col justify-between bg-white rounded-lg p-3 m-1 max-h-auto h-auto'>
             <div className='col-span-3 flex items-start  justify-between w-auto'>
                 <p className="text-[#25265E] text-xs font-semibold">Total de patients pris en charge</p>
 
@@ -70,10 +70,10 @@ function Index() {
 
             </div>
             <div className="flex justify-end  self-end items-end">
-<div>
-<h3 className='text-[#0DA8AE] text-3xl font-bold mt-5 flex gap-2 items-center w-auto'>1023</h3>
-                <Chart options={state.options} series={state.series} type="area" height={'50%'} width={220} />
-</div>
+                <div>
+                    <h3 className='text-[#0DA8AE] text-3xl font-bold mt-5 flex gap-2 items-center w-auto'>1023</h3> */}
+                    <Chart options={state.options} series={state.series} type="area" height={'50%'} width={220} />
+                {/* </div>
                 <div className="flex  items-start flex-col justify-between my-4 mx-3">
                     <div className='flex'>
 
@@ -87,8 +87,8 @@ function Index() {
 
 
             </div>
-        </div>
-        
+        </div> */}
+
     </>
 
     )

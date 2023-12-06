@@ -29,7 +29,7 @@ function Index() {
                 stroke: {
                     curve: 'smooth'
                 },
-                colors: ['#1AA10B'],
+                colors: ['#8fc689'],
                 responsive: [{
                     breakpoint: 1151,
                     options: {
@@ -81,7 +81,7 @@ function Index() {
     }, []);
     return (
         <div className="flex justify-start flex-wrap items-start" style={{ width: '100%', height: '100px' }}>
-            <Chart options={state.options} series={state.series} type="area" height={'100%'} width={'190%'} />
+            <Chart options={state.options} series={state.series} type="area" height={'100%'} width={'188%'} />
         </div>
     )
 }

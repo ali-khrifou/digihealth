@@ -12,7 +12,7 @@ function Login() {
 
     const nav = useNavigate()
     const handleLogin = () => {
-        nav('/patient')
+        nav('/')
     }
 
 

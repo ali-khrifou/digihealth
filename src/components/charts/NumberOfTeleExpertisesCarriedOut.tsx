@@ -102,7 +102,7 @@ function Index() {
 
 
   return (<>
-    <div className='flex w-auto flex-col justify-between bg-white rounded-lg p-3 m-1 max-h-auto h-auto'>
+    {/* <div className='flex w-auto flex-col justify-between bg-white rounded-lg p-3 m-1 max-h-auto h-auto'>
       <div className='col-span-3 flex items-start  justify-between w-auto'>
         <p className="text-[#25265E] text-xs font-semibold">Nombre de Télé-expertises réalisées.</p>
 
@@ -110,14 +110,14 @@ function Index() {
 
       </div>
       <div className="flex justify-end  self-end items-end">
-        <div>
-          <div className='flex items-center gap-3'>
-          <p className='text-[#0DA8AE] text-4xl font-bold mt-5 flex gap-2 items-center w-auto'>238
+        <div className='justify-start mr-7'>
+          <div className='flex justify-start items-center gap-3'>
+          <p className='text-[#0DA8AE] text-4xl font-bold mt-5 flex gap-2 items-start w-auto'>238
           </p>
             <span className='text-[#0DA8AE] text-sm mt-5 font-bold' > Du 06/11/2023 à<br></br> 13/11/2023</span>
-          </div>
+          </div> */}
           <Chart options={state.options} series={state.series} type="bar" width={200} height={100} />
-        </div>
+        {/* </div>
         <div className="flex  items-start flex-col justify-between my-4 mx-3">
           <div className='flex'>
             <FaLongArrowAltUp color="#1E8F12" size={35} />
@@ -130,7 +130,7 @@ function Index() {
 
 
       </div>
-    </div>
+    </div> */}
   </>
 
   )

@@ -27,7 +27,7 @@ function MedicationManagement() {
           <HeaderLayout title={'Gestion Médicale et Pharmaceutique'} subTitle={'Gestion Médicale et Pharmaceutique'} logo={medicationIcon} />
           <FilterBar />
         </div>
-        <div className='grid  gap-2 m-2 p-2 bg-[#E2F2F3]' style={{ display: 'Grid', gridTemplateColumns: 'repeat(auto-fit,minmax(37rem,1fr))' }}>
+        <div className='grid  gap-2 m-2 p-2 bg-[#E2F2F3]' style={{ display: 'Grid', gridTemplateColumns: 'repeat(auto-fit,minmax(25rem,37rem))' }}>
 
           <div className='block  flex-col rounded-lg w-auto h-[225px] bg-white sm:bg-cover' style={{ backgroundImage: `url(${medicationBg1})`, backgroundRepeat: 'no-repeat', backgroundSize: 'contain', backgroundPosition: 'top right' }}>
             <div className='flex flex-col  gap-1 ml-6'>

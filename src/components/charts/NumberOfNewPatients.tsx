@@ -102,7 +102,7 @@ function Index() {
 
 
   return (<>
-
+{/* 
     <div className='flex w-auto flex-col justify-between bg-white rounded-lg p-3 m-1 max-h-auto h-auto'>
       <div className='col-span-3 flex items-start  justify-between w-auto'>
         <p className="text-[#25265E] text-xs font-semibold">Total de patients pris en charge</p>
@@ -111,9 +111,9 @@ function Index() {
       </div>
       <div className="flex justify-end  self-end items-end">
         <div >
-          <h3 className='text-[#0DA8AE] text-3xl font-bold mt-5 flex gap-2 items-center w-auto'>1023</h3>
-          <Chart options={state.options} series={state.series} type="bar" min-width={500} max-width={700} height={100} />
-        </div>
+          <h3 className='text-[#0DA8AE] text-3xl font-bold mt-5 flex gap-2 items-center w-auto'>1023</h3> */}
+          <Chart options={state.options} series={state.series} type="bar" width={220} height={100} />
+        {/* </div>
         <div className="flex  items-start flex-col justify-between my-4 mx-3">
           <div className='flex'>
             <FaLongArrowAltUp color="#1E8F12" size={35} />
@@ -125,7 +125,7 @@ function Index() {
 
 
       </div>
-    </div>
+    </div> */}
   </>
 
   )

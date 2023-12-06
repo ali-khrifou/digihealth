@@ -23,7 +23,7 @@ const menuItems = [
     { path: "/performance", title: 'Performance Clinique et Épidémiologie', icon: performanceIcon },
     { path: "/telemedcine", title: 'Télémédecine', icon: telemedecineIcon },
     { path: "/billing", title: 'Facturation et Cotation', icon: facturationIcon },
-    { path: "/", title: 'Déconnexion', icon: logoutIcon },
+    { path: "/login", title: 'Déconnexion', icon: logoutIcon },
 ]
 export default function Index() {
     const [sidebarOpen, setSidebarOpen] = useState(false)

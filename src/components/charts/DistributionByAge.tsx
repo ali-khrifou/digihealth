@@ -34,15 +34,15 @@ function Index() {
     return (
       <>
       
-      <div className='flex w-auto flex-col justify-between bg-white rounded-lg p-3 m-1 max-h-auto h-auto'>
+      {/* <div className='flex w-auto flex-col justify-between bg-white rounded-lg p-3 m-1 max-h-auto h-auto'>
             <div className='col-span-3 flex items-start  justify-between w-auto'>
                 <p className="text-[#25265E] text-xs font-semibold">Total de patients pris en charge</p>
-            </div>
+            </div> */}
          
                   
                     <Chart options={state.options} series={state.series} type="pie" height={250} width={320}  />
             
-        </div>
+        {/* </div> */}
       </>
       
     )

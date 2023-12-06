@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Chart from 'react-apexcharts'
 import logo from '../../assets/motifIcon.svg'
 
@@ -84,7 +84,7 @@ function Index() {
         },
         responsive: [
             {
-                breakpoint: '22rem',
+                breakpoint: 500,
                 options: {
                     plotOptions: {
                         bar: {
@@ -98,8 +98,23 @@ function Index() {
             }
         ]
     })
+    const [windowSize, setWindowSize] = useState(window.innerWidth);
+    const [chartWidth, setChartWidth] = useState<any>();
 
+    useEffect(() => {
+        const handleWindowResize = () => {
+            setWindowSize(window.innerWidth);
+        };
 
+        window.addEventListener('resize', handleWindowResize);
+
+        return () => {
+            window.removeEventListener('resize', handleWindowResize);
+        };
+
+    }, []);
+
+    useEffect(() => windowSize < 718 ? setChartWidth(290) : setChartWidth(700), [windowSize]);
     return (
         <>
 
@@ -111,7 +126,7 @@ function Index() {
                     <img src={logo} alt="" className="w-17 h-12 " />
                 </div>
                 <div className='flex '>
-                    <Chart options={state.options} series={state.series} type="bar" width={750} height={120} />
+                    <Chart options={state.options} series={state.series} type="bar" width={chartWidth} height={120} />
                 </div>
 
             </div >

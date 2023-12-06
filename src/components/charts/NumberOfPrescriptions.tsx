@@ -7,7 +7,7 @@ function Index() {
 
             series: [{
                 name: 'series1',
-                data: [31, 40, 28, 51, 42, 109, 100]
+                data: [100, 101, 102, 103, 102, 105, 100]
             }],
             legend: {
                 show: false
@@ -18,7 +18,7 @@ function Index() {
                 chart: {
                     type: 'area',
                     height: 10,
-                    width: '100%',
+                    width: '50%',
                     sparkline: {
                         enabled: true
                     },
@@ -29,7 +29,7 @@ function Index() {
                 stroke: {
                     curve: 'smooth'
                 },
-                colors: ['#1AA10B'],
+                colors: ['#8fc689'],
                 responsive: [{
                     breakpoint: 1151,
                     options: {
@@ -81,7 +81,7 @@ function Index() {
     }, []);
     return (
         <div className="flex justify-start flex-wrap items-start m-0" style={{ width: '100%', height: '100px' }}>
-            <Chart options={state.options} series={state.series} type="area" height={'100%'} width={'190%'} />
+            <Chart options={state.options} series={state.series} type="area" height={'100%'} width={'188%'} />
         </div>
     )
 }

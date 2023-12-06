@@ -29,12 +29,12 @@ function Index() {
                 stroke: {
                     curve: 'smooth'
                 },
-                colors: ['#1AA10B'],
+                colors: ['#8fc689'],
                 responsive: [{
-                    breakpoint: 1151,
+                    breakpoint: 605,
                     options: {
                         chart: {
-                            width: '190%' // Adjust the width for smaller screens
+                            width: '100%' // Adjust the width for smaller screens
                         }
                     }
                 }]
@@ -46,43 +46,11 @@ function Index() {
             },
         }
     )
-    useEffect(() => {
-        const handleResize = () => {
-            // Adjust chart options based on screen width
-            const screenWidth = window.innerWidth;
-
-            if (screenWidth < 480) {
-                setState((prevState: { options: { chart: any; }; }) => ({
-                    ...prevState,
-                    options: {
-                        ...prevState.options,
-                        chart: {
-                            ...prevState.options.chart,
-                            width: '100%',
-                        },
-                    },
-                }));
-            } else {
-                // Adjust options for larger screens
-                // ...
-            }
-        };
-
-        // Initial setup
-        handleResize();
-
-        // Attach event listener for window resize
-        window.addEventListener('resize', handleResize);
-
-        // Cleanup event listener on component unmount
-        return () => {
-            window.removeEventListener('resize', handleResize);
-        };
-    }, []);
+  
     return (
-        <div className="flex justify-start flex-wrap items-start m-0" style={{ width: '100%', height: '100px' }}>
-            <Chart options={state.options} series={state.series} type="area" height={'100%'} width={'190%'} />
-        </div>
+       
+            <Chart options={state.options} series={state.series} type="area" height={'70%'} width={'190%'} />
+       
     )
 }
 

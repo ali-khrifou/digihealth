@@ -67,7 +67,7 @@ function TelemedecineStatistics() {
           <div className='h-[8.6rem] w-full'>
             {/* <img src={bgChart} alt="" className='h-auto w-auto' /> */}
             <div className='flex'>
-              <p className='flex items-center align-bottom gap-4 mr-[-5rem]  text-red-600 text-2xl font-bold'>
+              <p className='flex items-center align-bottom gap-4 mr-[-5rem]  text-red-600 text-2xl font-bold z-10'>
                 <FaLongArrowAltDown color='red' className='' size={40} /> 3%</p>
               <AverageDurationOfTeleexpertiseSession />
             </div>

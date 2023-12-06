@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Chart from 'react-apexcharts'
 import logo from '../../assets/motifIcon.svg'
 
@@ -89,14 +89,31 @@ function Index() {
             }
         ]
     })
+    const [windowSize, setWindowSize] = useState(window.innerWidth);
+    const [chartWidth, setchartWidth] = useState(window.innerWidth);
+    
+      useEffect(() => {
+        const handleWindowResize = () => {
+          setWindowSize(window.innerWidth );
+        };
+    
+        window.addEventListener('resize', handleWindowResize);
+    
+        return () => {
+          window.removeEventListener('resize', handleWindowResize);
+        };
+      }, []);
 
+      useEffect(()=>{
+        windowSize > 700 ? setchartWidth(550) : setchartWidth(420) 
+      },[windowSize])
 
     return (
         <>
 
 
          
-                <Chart options={state.options} series={state.series} type="bar" min-width={200} width={550} height={170} />
+                <Chart options={state.options} series={state.series} type="bar"  width={chartWidth} height={170} />
             
 
         </>)
