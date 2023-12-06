@@ -53,7 +53,7 @@ function ClinicalPerformance() {
           <div className="grid grid-cols-3">
 
             <div className='flex h-10 items-center self-center'>
-              <p className='flex items-center bg-gradient-to-r from-[#2c8cca63] to-[#E3F4FF] rounded-tl-lg rounded-bl-lg p-2 text-xs  text-[#25265E] font-semibold'>
+              <p className='flex items-center bg-gradient-to-l from-[#e3f4ff00] to-[#E3F4FF] rounded-tl-lg rounded-bl-lg p-2 text-xs  text-[#25265E] font-semibold'>
                 Télé-expertise</p>
               <img src={teleIcon1} alt='' className='h-15 w-10' />
             </div>
@@ -63,7 +63,7 @@ function ClinicalPerformance() {
             </div>
             <div className='flex h-10 items-center self-center'>
               <img src={teleIcon2} alt='' className='h-15 w-10' />
-              <p className='flex items-center flex-wrap h-12 bg-gradient-to-r from-[#FFEBEB] to-[#ae4f4f73] font-semibold text-xs rounded-tr-lg rounded-br-lg p-2'>
+              <p className='flex items-center flex-wrap h-12 bg-gradient-to-r from-[#ffebeb00] to-[#FFEBEB] font-semibold text-xs rounded-tr-lg rounded-br-lg p-2'>
                 Généraliste</p>
             </div>
           </div>

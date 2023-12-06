@@ -7,14 +7,14 @@ function Index() {
     const [state, setState] = useState<any>(
         {
 
-            series: [62, 18],
+            series: [62, 38],
             options: {
                 chart: {
                     minWidth: 380,
                     maxWidth: 1200,
                     type: 'pie',
                 },
-                labels: [],
+                labels: ['Généraliste','Télé-expertise'],
                 dataLabels: {
                     enabled: true,
                 },

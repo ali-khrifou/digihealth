@@ -18,7 +18,7 @@ function classNames(...classes: string[]) {
     return classes.filter(Boolean).join(' ')
 }
 const menuItems = [
-    { path: "/patient", title: 'Administration des Patients et Services', icon: administrationIcon },
+    { path: "/", title: 'Administration des Patients et Services', icon: administrationIcon },
     { path: "/medication", title: 'Gestion Médicale et Pharmaceutique', icon: pharmacieIcon },
     { path: "/performance", title: 'Performance Clinique et Épidémiologie', icon: performanceIcon },
     { path: "/telemedcine", title: 'Télémédecine', icon: telemedecineIcon },

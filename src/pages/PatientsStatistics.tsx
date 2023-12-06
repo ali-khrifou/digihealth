@@ -36,6 +36,7 @@ function PatientsStatistics({ }: IPatientsStatisticsProps) {
                 <FilterBar />
             </div>
             <div className=' bg-[#E2F2F3] m-3' style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,25rem)' }}>
+                
                 <TotalPatientTreat />
                 <NumberOfNewPatientsChart />
                 <TotalBenefitsChart />

@@ -13,11 +13,11 @@ import Login from './pages/Login';
 function App() {
   const routes = [
     {
-      path: "/",
       element: <Layout />,
       children: [
         {
-          path: "/patient",
+          index:true,
+          // path: "/patient",
           element: <PatientsStatistics />
         },
         {

@@ -17,6 +17,8 @@ function Index() {
                         endAngle: 270
                     }
                 },
+                labels:['Maladies Infectieuses', 'Troubles Cardiovasculaires','Troubles Cardiovasculaires','Maladies Respiratoires','Troubles Musculo-Squelettiques',
+                         'Troubles Musculo-Squelettiques','Troubles Mentaux','Autres'],
                 dataLabels: {
                     enabled: false
                 },
@@ -33,9 +35,9 @@ function Index() {
                     position: 'right',
                     horizontalAlign: 'center', 
                     floating: false,
-                    fontSize: '14px',
+                    fontSize: '10px',
                     fontFamily: 'Helvetica, Arial',
-                    fontWeight: 400,
+                    fontWeight: 300,
                     inverseOrder: false,
                     width: 0,
                     height: 0,
@@ -66,7 +68,7 @@ function Index() {
     )
     return (
        
-            <Chart options={state.options} series={state.series} type="donut" height={150} width={380} />
+            <Chart options={state.options} series={state.series} type="donut" height={250} width={380} />
       
     )
 }

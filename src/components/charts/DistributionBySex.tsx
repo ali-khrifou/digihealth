@@ -23,10 +23,10 @@ function Index() {
                 },
                 colors: ['#983333', '#59AFE6'],
                 responsive: [{
-                    breakpoint: 480,
+                    breakpoint: 500,
                     options: {
                       chart: {
-                        width: 200,
+                        width: 300,
                         toolbar: {
                           show: false
                         },
@@ -55,7 +55,7 @@ function Index() {
 
                     <div className='flex'>
                         <img src={womanIcon} alt='' className='h-10 w-5' />
-                        <p className='flex gap-7 px-5 items-center bg-gradient-to-r from-[#FFEBEB] to-[#ae4f4f73] rounded-tr-lg rounded-br-lg p-2'>
+                        <p className='flex gap-7 px-5 items-center bg-gradient-to-r from-[#ffebeb00] to-[#FFEBEB] rounded-tr-lg rounded-br-lg p-2'>
                             <span className='text-[#AF5050] font-bold text-xl'>63%</span>Femme</p>
                     </div>
 
@@ -63,7 +63,7 @@ function Index() {
 
                     <div className='flex '>
                         <img src={manIcon} alt='' className='h-10 w-5' />
-                        <p className='flex gap-7 px-5 items-center bg-gradient-to-r from-[#E3F4FF] to-[#2c8cca63] rounded-tr-lg rounded-br-lg p-2'>
+                        <p className='flex gap-7 px-5 items-center bg-gradient-to-r from-[#e3f4ff00] to-[#E3F4FF] rounded-tr-lg rounded-br-lg p-2'>
                             <span className='text-[#3F7CA2] font-bold text-xl'>22%</span>  Homme</p>
                     </div>
                 </div>

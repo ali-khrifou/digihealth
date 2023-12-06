@@ -9,7 +9,7 @@ function Index() {
       data: [44, 55, 41, 67, 22, 43, 21]
     }],
     options: {
-      colors: ['#0B2349'],
+      colors: ['#08A5AB'],
       annotations: {
         points: [{
           x: '',
@@ -58,7 +58,7 @@ function Index() {
       },
       xaxis: {
         labels: {
-          rotate: -25
+          rotate:0
         },
         categories: ['l', 'M', 'M', 'J', 'V', 'S', 'D'],
         tickPlacement: 'on'
@@ -101,7 +101,7 @@ function Index() {
 
   return (
     <div style={{ minWidth:'12rem',maxWidth:'22rem' }}>
-      <Chart options={state.options} series={state.series} type="bar" min-width={200} max-width={1200} height={140} />
+      <Chart options={state.options} series={state.series} type="bar" min-width={200} max-width={1200} height={100} />
     </div>
   )
 }
